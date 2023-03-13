@@ -26,6 +26,8 @@ export const addCard = payload => ({ type: 'ADD_CARD', payload});
 
 export const updateSearchString = payload => ({ type: 'UPDATE_SEARCHSTRING', payload});
 
+export const addList = playload => ({ type: 'ADD_LIST', playload});
+
 const reducer = (state, action) => {
   switch(action.type) {
     case 'ADD_COLUMN':
@@ -34,6 +36,8 @@ const reducer = (state, action) => {
         return { ...state, cards: [...state.cards, {id: shortid(), ...action.payload }]};
     case 'UPDATE_SEARCHSTRING':
       return { ...state, searchString: action.payload };
+      case 'ADD_LIST':
+            return { ...state, lists: [...state.lists, {...action.playload, id: shortid() }]}; 
     default:    
         return state;
 }        
