@@ -1,13 +1,41 @@
 @import '../../styles/settings.scss';
 
 .card {
-    position: relative;
-    background: $color-light;
-    border: 1px solid lighten($color-dark, 60%);
-    padding: $base-size;
-    margin: 0 0 $base-size 0;
-    border-radius: $radius;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
+  position: relative;
+  background: $color-light;
+  border: 1px solid lighten($color-dark, 60%);
+  padding: $base-size;
+  margin: 0 0 $base-size 0;
+  border-radius: $radius;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.button {
+  background-color: $color-light;
+  color: lighten($color-dark, 60%);
+  border: none;
+  padding: 0;
+  font-size: $base-size * 2;
+}
+
+.remove_button {
+  color: $color-dark;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.active {
+  color: $color-warning;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-dark;
 }

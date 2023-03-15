@@ -18,18 +18,21 @@ const initialState = {
        title: 'Books',
        icon: 'book',
        listId: '1',
+       isFavorite: true,
      },
      {
        id: 2,
        title: 'Movies',
        icon: 'film',
        listId: '1',
+       isFavorite: false,
      },
      {
        id: 3,
        title: 'Games',
        icon: 'gamepad',
        listId: '1',
+       isFavorite: false,
      },
 
      {
@@ -37,6 +40,7 @@ const initialState = {
       title: 'Song',
       icon: 'music',
       listId: '2',
+      isFavorite: true,
     },
    ],
  
