@@ -5,3 +5,5 @@ export const strContains = (str1, str2) => {
        return false;    
    }
 }
+
+export default strContains
